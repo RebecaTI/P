@@ -4,6 +4,8 @@
     --azul-escuro: #1a1b56;
     --azul-claro-fundo: #c9d8fd;
     --preto: #0000;
-    --branco-cinza: linear-gradient (180deg, #faffff 60%, #ffffff3c 40%);
+    --branco-cinza-gradient: linear-gradient(120deg, #f7f3f3df 20%, #2b292991 200%);
     --cinza: #ffffff3c;
 }
+
+
