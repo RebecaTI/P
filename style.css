@@ -1,0 +1,9 @@
+:root {
+    --branco: #faffff;
+    --azul-claro: #8bc3f7;
+    --azul-escuro: #1a1b56;
+    --azul-claro-fundo: #c9d8fd;
+    --preto: #0000;
+    --branco-cinza: linear-gradient (180deg, #faffff 60%, #ffffff3c 40%);
+    --cinza: #ffffff3c;
+}
