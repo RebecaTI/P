@@ -1,0 +1,97 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    height: 500vh;
+    background-color: #000;
+}
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+.container {
+    max-width: 1080px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Não pode ter espaço entre a tag e o espaço */
+/* rolagem foi adicionada no script-menu.js*/
+header.rolagem {
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a,
+header.rolagem svg {
+    color: #FE775A;
+}
+
+
+header svg{
+    font-size: 30px;
+    color: #fff
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #2a9d8f;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('./images/banner.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 4em;
+}
+
+.banner h1 span{
+    color: #e9c46a;
+}
+
+
+
+

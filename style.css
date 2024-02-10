@@ -1,11 +1,103 @@
+
 :root {
     --branco: #faffff;
-    --azul-claro: #8bc3f7;
-    --azul-escuro: #1a1b56;
-    --azul-claro-fundo: #c9d8fd;
-    --preto: #0000;
-    --branco-cinza-gradient: linear-gradient(120deg, #f7f3f3df 20%, #2b292991 200%);
-    --cinza: #ffffff3c;
+    --vermelho:#e63946;
+    --azul-claro:#a8dadc;
+    --azul-medio:#457b9d;
+    --azul-medio-opcao-2:#00a8e8;
+    --azul-forte:#1d3557;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Excluir a parte de html no futuro */
+html {
+    height: 500vh;
+}
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container-menu {
+    max-width: 100%;
+    margin: auto;
+}
+
+.flex-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Menu transparente */
+header.rolagem {
+    background-color:var(--branco);
+    padding: 2em 4%;
+}
+
+header.rolagem a,
+header.rolagem svg {
+
+}
+
+/* Fim menu transparente*/
+
+.flex-header svg {
+    font-size: 30px;
+    color: #fff;
+}
+
+.nav-header ul{
+    list-style-type: none;
+}
+
+.nav-header li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.nav-header li a{
+    text-transform:uppercase;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.bt-contato button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+}
+
+.banner {
+    height: 90vh;
+    background-image: url(https://img.freepik.com/vetores-gratis/copie-o-fundo-digital-dos-circuitos-azuis-do-espaco_23-2148821699.jpg?w=1380&t=st=1707409592~exp=1707410192~hmac=7a672aa5187e5d7acc85f5302d950390b239f6567faecef2f24b6605309c9dce);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.banner h1{
+    font-size:4em;
+    color:var(--branco);
 }
 
 
+.container-quadrados{
+    width:100px;
+    height:100px;
+    border:10px solid orange;
+}
