@@ -1,0 +1,12 @@
+.btn-contato a {
+    text-decoration:none;
+    font-family:var(--font-Balsamiq-Sans);
+    font-size:1em;
+    color: var(--vermelho);
+    border: 6px solid currentColor;
+    padding:.5em 1em;
+    border-radius:16px;
+
+    transition: .2s;
+    
+}

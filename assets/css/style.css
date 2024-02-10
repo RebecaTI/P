@@ -6,6 +6,12 @@
     --azul-medio:#457b9d;
     --azul-medio-opcao-2:#00a8e8;
     --azul-forte:#1d3557;
+    --preto-menu:#000000;
+
+    --font-Balsamiq-Sans: "Balsamiq Sans", cursive;
+
+    --neon-rosa:hsl(317 100% 54%);
+    --neon-azul:#14fff1;
 }
 
 * {
@@ -26,6 +32,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    transition: .5s;
 }
 
 .container-menu {
@@ -42,12 +49,12 @@ header {
 /* Menu transparente */
 header.rolagem {
     background-color:var(--branco);
-    padding: 2em 4%;
+    padding: 1em 4%;
 }
 
-header.rolagem a,
+header.rolagem li a,
 header.rolagem svg {
-
+    color: var(--preto-menu);
 }
 
 /* Fim menu transparente*/
@@ -62,20 +69,44 @@ header.rolagem svg {
 }
 
 .nav-header li {
+    text-transform:uppercase;
     display: inline-block;
     margin: 0 40px;
 }
 
 .nav-header li a{
-    text-transform:uppercase;
     text-decoration: none;
     color: var(--branco);
+    position:relative;
 }
 
-.bt-contato button {
-    width: 120px;
-    height: 40px;
-    border: 0;
+.nav-header li a:before {
+    content:'';
+    width: 10px;
+    height: 5px;
+    background:var(--azul-medio-opcao-2);
+    position:absolute;
+    top: 100%;
+    left:0;
+    transition: .5s;
+}
+
+.nav-header li:hover a:before {
+    width: 50%;
+    transform:translateX(100%);
+}
+
+.btn-contato a {
+    text-decoration:none;
+    font-family:var(--font-Balsamiq-Sans);
+    font-size:1em;
+    color: var(--vermelho);
+    border: 6px solid currentColor;
+    padding:.5em 1em;
+    border-radius:16px;
+
+    transition: .2s;
+    
 }
 
 .banner {

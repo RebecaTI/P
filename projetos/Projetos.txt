@@ -3,5 +3,9 @@ Projetos
 --Ao colocar o numero do cartao, já aparec a bandeira do cartao.
 --Senha do cartao, escrever com o html password
 --Ao digitar o nome, escrever no html o autocomplet 
---Cep automatico, usando a localização da pessoa
+--Cep automatico, usando a localização da pessoa(consumindo alguma API)
 --Design pod ser igual a algum curso ou banco
+
+
+
+02- Criar um jogo 
