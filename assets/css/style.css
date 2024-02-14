@@ -121,7 +121,7 @@ header.rolagem svg {
 }
 
 .banner h1{
-    font-size:3rem;
+    font-size:4rem;
     color:var(--branco);
     text-align:center;
 }
@@ -129,7 +129,7 @@ header.rolagem svg {
 #dynamic-neon-text{
     text-transform: uppercase;
     letter-spacing:0.01em;
-    font-size: 3rem;
+    font-size: 5rem;
     color:var(--branco);
 
     text-shadow:
@@ -209,7 +209,7 @@ header.rolagem svg {
 .sobre-mim,
 .habilidades{
     font-family:var(--font-main);
-    font-size:1em;
+    font-size:2em;
     color:white;
     text-align:center;
 }
@@ -230,7 +230,7 @@ img{
     width:80%;
     font-weight:200;
     letter-spacing:0.05rem;
-    font-size:1rem;
+    font-size:2rem;
     text-align:initial;
     margin: 1rem ;
     padding:auto;
