@@ -1,5 +1,4 @@
 
-
 :root {
     --branco: #faffff;
     --vermelho:#e63946;
@@ -7,11 +6,10 @@
     --roxo-forte:#08001b;
     --preto-menu:#000000;
     
-
-    --font-roboto :"Roboto", sans-serif;
     --font-Balsamiq-Sans: "Balsamiq Sans", cursive;
 
 
+    
     
     
     --azul-esverdeado-forte:#07252d;
@@ -24,16 +22,16 @@
 * {
     margin: 0;
     padding: 0;
-    max-width:100%;
     box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
 }
 
-body{
-    font-family:"Inter", sans-serif;
-    letter-spacing:1px;
+/* Excluir a parte de html no futuro */
+html {
+    height: 500vh;
+    background: black;
 }
 
-/* Inicio header */
 header {
     width: 100%;
     padding: 60px 4%;
@@ -68,8 +66,8 @@ header.rolagem svg {
 /* Fim menu transparente*/
 
 .flex-header svg {
-    font-size: 8rem;
-    color: var(--branco);
+    font-size: 30px;
+    color: #fff;
 }
 
 .nav-header ul{
@@ -104,12 +102,11 @@ header.rolagem svg {
     transform:translateX(100%);
 }
 
-/* fim header */
 
-/* inicio banner */
+
 .banner {
     height: 90vh;
-    background-image:url('../images/banner-background.jpg');
+    background:var(--roxo-forte);
     background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -120,16 +117,25 @@ header.rolagem svg {
 
 }
 
+.box{
+    position:relative;
+    width:600px;
+    height:300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .banner h1{
-    font-size:3rem;
+    font-size:3em;
+    letter-spacing:0.1em;
     color:var(--branco);
     text-align:center;
 }
 
-#dynamic-neon-text{
-    text-transform: uppercase;
-    letter-spacing:0.01em;
-    font-size: 3rem;
+#banner-neon-text{
+    font-size: 3.5rem;
+    text-transform:uppercase;
     color:var(--branco);
 
     text-shadow:
@@ -138,76 +144,88 @@ header.rolagem svg {
     0 0 80px var(--azul-medio),
     0 0 160px var(--azul-medio),
     0 0 400px var(--azul-medio);
-
 }
 
-#dynamic-neon-text{
-    animation: animate 5s linear forwards;
+.lightbar{
+    position:absolute;
+    top:0;
+    left:0;
+    width:10px;
+    height:100%;
+    border-radius:10px;
+    background:#fff;
+    z-index:2;
+    box-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff;
+    animation: animatelightbar 5s linear forwards;
 }
 
-#dynamic-neon-text:nth-child(even){
-    animation-delay: 0.4s;
-}
 
-@keyframes animate{
-    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+@keyframes animatelightbar{
+    0%,5%
     {
-        color:transparent;
-        text-shadow:none;
+        transform:scaleY(0) translateX(0);
     }
-    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    10%
     {
-        color:var(--branco);
-
-        text-shadow:
-        0 0 20px var(--azul-medio),
-        0 0 40px var(--azul-medio),
-        0 0 80px var(--azul-medio),
-        0 0 160px var(--azul-medio),
-        0 0 400px var(--azul-medio);
-        }
+        transform:scaleY(1) translateX(0);
+    }
+    90%
+    {
+        transform:scaleY(1) translateX(calc(600px - 10px));
+    }
+    95%,100%
+    {
+        transform:scaleY(0) translateX(calc(600px - 10px));
+    }
 }
 
-
-/* fim banner */
-
-/* Inicio sobre mim */
-.box-sobre-mim{
-    min-height:70vh;
-    background:var(--preto-menu);
-
+.topLayer{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:var(--roxo-forte);
+    animation: 
+    animatetopLayer 10s linear forwards;
 }
 
-.title{
-    padding:2rem 0;
-    text-transform:uppercase;
-
-}
-
-.sobre-mim{
-    font-family:Roboto;
-    font-size:1em;
-    color:white;
-    text-align:center;
-}
-
-.container-sobre-mim{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    gap:1rem;
-    padding:0 6rem ;
-}
-
-img{
-    width:30%;
-}
-
-.txt-sobre-mim{
-    font-family: Arial, Helvetica, sans-serif;
-    width:50%;
+@keyframes animatetopLayer{
+    0%,2.5%
+    {
+        transform:translateX(0);
+    }
+    5%
+    {
+        transform:translateX(0);
+    }
+    45%
+    {
+        transform:translateX(100%);
+    }
+    47.5%,50%
+    {
+        transform:translateX(100%);
+    }
+    50.001%,52.5%
+    {
+        transform:translateX(100%);
+    }
+    55%
+    {
+        transform:translateX(100%);
+    }
+    95%
+    {
+        transform:translateX(100%);
+    }
+    97.5%,100%
+    {
+        transform:translateX(100%);
+    }
     
-    letter-spacing:1px;
-    font-size:1.2rem;
-    text-align:start;
 }
