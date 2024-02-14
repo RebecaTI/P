@@ -1,17 +1,16 @@
 
-
 :root {
     --branco: #faffff;
     --vermelho:#e63946;
     --azul-medio:#00a8e8;
-    --roxo-forte:#08001b;
     --preto-menu:#000000;
+    --roxo-forte-1:#08001b;
+    --roxo-forte-2:#12003b;
     
-
-    --font-roboto :"Roboto", sans-serif;
     --font-Balsamiq-Sans: "Balsamiq Sans", cursive;
+    --font-main: arial;
 
-
+    
     
     
     --azul-esverdeado-forte:#07252d;
@@ -31,6 +30,7 @@
 body{
     font-family:"Inter", sans-serif;
     letter-spacing:1px;
+    background:var(--roxo-forte-1);
 }
 
 /* Inicio header */
@@ -171,43 +171,80 @@ header.rolagem svg {
 
 /* fim banner */
 
-/* Inicio sobre mim */
-.box-sobre-mim{
-    min-height:70vh;
-    background:var(--preto-menu);
+.hidden {
+    opacity: 0;
+    /* filter: blur(15px); */
+    transform: translateX(-100%);
+    transition: all 2s;
+}
 
+.show {
+    opacity: 1;
+    /* filter: blur(0); */
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.box-sobre-mim,
+.box-habilidades{
+    height:100%;
+    padding:2rem;
+    
+}
+
+.box-sobre-mim{
+    background:var(--roxo-forte-1);
 }
 
 .title{
-    padding:2rem 0;
     text-transform:uppercase;
-
+    color:white;
 }
 
-.sobre-mim{
-    font-family:Roboto;
+.linha-horizontal{
+    border:2px solid var(--azul-medio);
+    width:50%;
+    margin:0 auto ;
+}
+.sobre-mim,
+.habilidades{
+    font-family:var(--font-main);
     font-size:1em;
     color:white;
     text-align:center;
 }
 
+
 .container-sobre-mim{
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
-    gap:1rem;
-    padding:0 6rem ;
+    display:block;
+    font-family:var(--font-main);
+    margin:1rem;
 }
 
 img{
     width:30%;
+    padding:1rem;
 }
 
 .txt-sobre-mim{
-    font-family: Arial, Helvetica, sans-serif;
-    width:50%;
-    
-    letter-spacing:1px;
-    font-size:1.2rem;
-    text-align:start;
+    width:80%;
+    font-weight:200;
+    letter-spacing:0.05rem;
+    font-size:1rem;
+    text-align:initial;
+    margin: 1rem ;
+    padding:auto;
+}
+
+.txt-sobre-mim:nth-child(1){transition-delay:400ms;}
+.txt-sobre-mim:nth-child(2){transition-delay:700ms;}
+.txt-sobre-mim:nth-child(3){transition-delay:1000ms;}
+.txt-sobre-mim:nth-child(4){transition-delay:1300ms;}
+
+
+.box-habilidades{
+    padding:2rem;
+    min-height:80vh;
+    background:var(--roxo-forte-2);
+
 }

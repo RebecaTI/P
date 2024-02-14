@@ -1,0 +1,9 @@
+Ola meu nome é Rebeca, tenho 28 anos. Por muitos anos procurei algo que eu me identificasse, por ter autismo tenho dificuldade em estar fisicamente perto de pessoas. Essa dificuldade não se aplica online, e meu melhor amigo me fez um desafio de logica de programação. 
+Minha vida mudou, em 2022 descobri a programação e estudo desde então. Meu foco atualmente é seguir a carreira Fullstack, então meu primeiro passo é aprender front-end e apos isso seguirei para o backend.
+Tenho experiencia academica em HTML,CSS,JS,GIT,GITHUB, responsividade. Já me aventurei em linux, c++, python e SQL mas nunca aprofundei e pretendo estudar a fundo futuramente.
+Atualmente estou me aprofundando em JS, para em seguida aprender Typescrip, React, Angular, MariaDB e oq meu coração mandar.
+Estou a procura do meu primeiro trabalho na area. Meu maior prazer é estudar, amo aprender coisas novas e tenho determinação para resolver problemas. 
+
+
+
+  porem sempre tive dificuldade em estar em lugares cheios de pessoas, tenho autismo então 
