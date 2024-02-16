@@ -34,7 +34,7 @@ body{
 }
 
 /* Inicio header */
-header {
+.nav-bar {
     width: 100%;
     padding: 60px 4%;
     position: fixed;
@@ -54,23 +54,23 @@ header {
     justify-content: space-between;
 }
 
+.fa-home{
+    color:var(--azul-medio);
+}
+
 /* Menu transparente */
-header.rolagem {
+
+.nav-bar.rolagem {
     background-color:var(--branco);
     padding: 1em 4%;
 }
 
-header.rolagem li a,
-header.rolagem svg {
+.nav-bar.rolagem li a,
+.nav-bar.rolagem svg {
     color: var(--preto-menu);
 }
 
 /* Fim menu transparente*/
-
-.flex-header svg {
-    font-size: 8rem;
-    color: var(--branco);
-}
 
 .nav-header ul{
     list-style-type: none;
@@ -121,7 +121,7 @@ header.rolagem svg {
 }
 
 .banner h1{
-    font-size:4rem;
+    font-size:3rem;
     color:var(--branco);
     text-align:center;
 }
@@ -129,7 +129,7 @@ header.rolagem svg {
 #dynamic-neon-text{
     text-transform: uppercase;
     letter-spacing:0.01em;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color:var(--branco);
 
     text-shadow:
@@ -178,7 +178,8 @@ header.rolagem svg {
     transition: all 2s;
 }
 
-.show {
+.show,
+.nav-bar {
     opacity: 1;
     /* filter: blur(0); */
     transform: translateX(0);
@@ -230,9 +231,9 @@ img{
     width:80%;
     font-weight:200;
     letter-spacing:0.05rem;
-    font-size:2rem;
+    font-size:1rem;
     text-align:initial;
-    margin: 1rem ;
+    margin: auto ;
     padding:auto;
 }
 
