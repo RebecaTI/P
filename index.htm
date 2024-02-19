@@ -21,8 +21,9 @@
                   <nav class="nav-header">
                     <ul>
                         <li><a href="#">Sobre mim</a></li>
-                        <li><a href="#">Habilidades</a></li>
                         <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Habilidades</a></li>
+                        <li><a href="#">Certificações</a></li>
                     </ul>
                   </nav>
 
@@ -44,8 +45,8 @@
         </h1>
         </section>
 
-    <div class="box-sobre-mim hidden" >
-        <div class="sobre-mim">
+    <section class="box-sobre-mim hidden" >
+        <div class="sobre-mim hidden">
             <h2 class="title">Sobre mim</h2>
             <div class="linha-horizontal"></div>
     
@@ -64,7 +65,7 @@
                     <br><br>
                  </p>
                  <p class="txt-sobre-mim hidden">
-                    Atualmente estou estudando JS, para em seguida aprender Typescrip, React, Angular, MariaDB e o que o futuro me reservar.
+                    Atualmente estou estudando JS, para em seguida aprender Typescrip, React, Angular, MongoDB e o que o futuro me reservar.
                     <br><br>
                 </p>
                  <p class="txt-sobre-mim hidden">
@@ -72,18 +73,70 @@
                     <br><br>
                 </p>    
         </div>
-    </div>
+    </section>
 
-    <div class="box-habilidades hidden" >
+    <section class="box-projetos hidden" >
+        <div class="projetos">
+            <h2 class="title">Projetos</h2>
+            <div class="linha-horizontal"></div>
+        </div>
+    </section>
+
+    <section class="box-habilidades hidden" >
         <div class="habilidades">
             <h2 class="title">Habilidades</h2>
             <div class="linha-horizontal"></div>
-            <div class="container-habilidades">
+            <div class="flex-habilidades">
 
+                <div class="habilidades-html-css-js">
+                    <h3 class="habidade-linguagem">HTML,CSS e Javascript</h3>
+                    <p class="habilidade-txt">HTML, CSS e Javascript, também conhecidas como santíssima trindade da web, formam o principal conjunto de tecnologias para qualquer aplicação web. Já deu para ver que é de suma importância entender MUITO bem esses caras.</p>
+                </div>
+
+                <div class="img-habilidades-flex">
+                <div class="img-habilidades">
+                    
+                    <img id="img-html"
+                    src="./assets/images/icons8-html-5.svg" alt="">
+                    <img id="img-css" src="./assets/images/icons8-css3.svg" alt="">
+                    <img id="img-js" src="./assets/images/icons8-javascript.svg" alt="">
+
+                </div>
             </div>
         </div>
+    </section>
 
-    </div>
+    <section class="box-certificicoes hidden">
+        <div class="certificacoes">
+            <h2 class="title">Certificações</h2>
+            <div class="linha-horizontal"></div>
+    
+            <div class="swiper-horizontal">
+    
+                <div class="">
+                    <h3 class="title-certificacao">JavaScript: manipulando elementos no DOM</h3>
+                    <p class="certificacao-txt">Instituição: <span>Alura</span></p>
+                    <p class="certificacao-txt">Duração: <span>6 horas</span></p>
+                    <p class="certificacao-txt">Instrutor: <span>Luan Alves</span></p>
+                    <p class="certificacao-txt">Ano de conclusão: <span>24/08/2023</span></p>
+                    <p class="certificacao-txt">Certificado: <span>
+                        <a class="link-certificado" href="https://cursos.alura.com.br/user/mebuffbeka/course/javascript-manipulando-elementos-dom/formalCertificate">Clique aqui</a>
+                    </span></p>
+                </div>
+    
+            </div>
+
+        </div>
+
+        
+
+
+
+    </section>
+
+    <section class="box-contatos hidden">
+
+    </section>
 
     </main>
     
@@ -95,3 +148,4 @@
 </html>
 
 <!-- You can never understand everything but, you should push yourself to understand the system." (creator node.js) -->
+

@@ -38,6 +38,7 @@ body{
     width: 100%;
     padding: 60px 4%;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     transition: .5s;
@@ -190,16 +191,15 @@ body{
 .box-habilidades{
     height:100%;
     padding:2rem;
-    
-}
-
-.box-sobre-mim{
     background:var(--roxo-forte-1);
+    
 }
 
 .title{
     text-transform:uppercase;
     color:white;
+    font-size:2em;
+
 }
 
 .linha-horizontal{
@@ -208,18 +208,19 @@ body{
     margin:0 auto ;
 }
 .sobre-mim,
-.habilidades{
+.projetos,
+.habilidades,
+.certificacoes{
     font-family:var(--font-main);
-    font-size:2em;
     color:white;
     text-align:center;
+    padding:1rem 0 1rem 0;
 }
 
 
 .container-sobre-mim{
     display:block;
     font-family:var(--font-main);
-    margin:1rem;
 }
 
 img{
@@ -227,7 +228,9 @@ img{
     padding:1rem;
 }
 
-.txt-sobre-mim{
+.txt-sobre-mim,
+.habilidade-txt
+{
     width:80%;
     font-weight:200;
     letter-spacing:0.05rem;
@@ -243,9 +246,40 @@ img{
 .txt-sobre-mim:nth-child(4){transition-delay:1300ms;}
 
 
-.box-habilidades{
+.box-projetos,
+.box-certificicoes{
     padding:2rem;
     min-height:80vh;
     background:var(--roxo-forte-2);
-
 }
+
+.flex-habilidades{
+    display: flex;
+    text-align:center;
+    margin:2rem;
+    width: 100%;
+}
+
+.habidade-linguagem{
+    color:var(--neon-azul);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+.habilidade-txt{
+    margin:auto 0 auto auto;
+}
+
+.habilidades-html-css-js{
+    width:70%;
+}
+
+
+#img-html,
+#img-js,
+#img-css{
+    width: 45%;
+    padding:0;
+}
+
+
