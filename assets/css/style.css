@@ -287,9 +287,10 @@ img{
 /* Swiper cards */
 
 .box-certificicoes{
-    height:80vh;
+    height:70vh;  
     
 }
+
 .swiper-container {
     display:flex;
     justify-content:center;
@@ -304,12 +305,14 @@ img{
 }
 
 .card--content{
+
     margin-inline: 1.75rem;
     /* border-radius: 1.25rem; */
     overflow:hidden;
 }
 
 .card {
+    
     border: 3px solid var(--neon-azul);
     border-radius:5%;
     width: 200px;
@@ -336,11 +339,63 @@ img{
 }
 
 /* Swiper class */
-.swiper-button-prev,
-.swiper-button-next{
-    width:initial;
-    height:initial;
-    font-size:3rem;
+.swiper-pagination-bullet{
+    background-color:hsl(212, 32%, 40%);
+    opacity:1;
 }
 
+.socialMedia{
+    display:flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
 
+.sci{
+    display:flex;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display:inline-block;
+    width:120px;
+    height:120px;
+    background:var(--azul-forte);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--neon-azul);
+    border-radius:10px;
+    text-decoration:none;
+    margin: 20px;
+    font-size: 4rem;
+    transform-style:preserve-3d;
+    perspective:500px;
+}
+
+.js-tilt-glare{
+    border-radius:10px;
+}
+
+.sci li a .fa{
+    transition:0.3s;
+}
+
+.sci li a:hover .fa{
+    transform: scale(1.75) translateZ(50px);
+}
+
+/* For small devices */
+@media screen and (max-width: 320px){
+    
+}
+
+/* For medium devices */
+@media screen and (min-width:768px){
+    .swiper-button-next,
+    .swiper-button-prev{
+        display:block;
+    }
+}
