@@ -5,7 +5,7 @@ Projetos
 --Ao digitar o nome, escrever no html o autocomplet 
 --Cep automatico, usando a localização da pessoa(consumindo alguma API)
 --Design pod ser igual a algum curso ou banco
-
+--colocar api de cep automatico
 
 
 02- Criar um jogo 
