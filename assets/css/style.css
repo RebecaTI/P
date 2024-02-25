@@ -25,6 +25,7 @@
     padding: 0;
     max-width:100%;
     box-sizing: border-box;
+    font-size: 24px;
 }
 
 body{
@@ -288,8 +289,7 @@ img{
 /* Swiper cards */
 
 .box-certificicoes{
-    height:70vh;  
-    
+    height:60vh;  
 }
 
 .swiper-container {
@@ -306,8 +306,7 @@ img{
 }
 
 .card--content{
-
-    margin-inline: 1.75rem;
+    margin: auto;
     /* border-radius: 1.25rem; */
     overflow:hidden;
 }
@@ -386,6 +385,45 @@ img{
 
 .sci li a:hover .fa{
     transform: scale(1.75) translateZ(50px);
+}
+
+
+/* ===== Alterações temporarias ===== */
+
+.nav-bar{
+    display: none;
+}
+/* ===== Alterações temporarias ===== */
+
+.contact{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.contact form{
+    width:600px;
+    text-align:center;
+}
+
+form .input-box{
+    display:flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width:48.5%;
+}
+
+.field .item{
+    width:100%;
+    padding:18px;
+    background:transparent;
+    border: 2px solid var(--neon-azul);
+    outline:none;
+    border-radius:16px;
+    font-size:16px;
+
 }
 
 /* For small devices */

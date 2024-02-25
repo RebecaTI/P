@@ -231,7 +231,7 @@
         </div>
     </section>
 
-    <section class="box-contatos hidden">
+    <section class="box-contatos ">
         <div class="contato">
             <h2 class="title">Contato</h2>
             <div class="linha-horizontal"></div>
@@ -247,10 +247,29 @@
                 </ul>
             </div>
 
-            <div class="email">
+            <div class="contact">
+
+                <form action="#">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <input type="text" placeholder="Nome" id="nome" class="item" autocomplete="on">
+                            <!-- <div class="error-txt">O nome não pode ficar em branco</div> -->
+                        </div>
+                
+                        <div class="input-field field">
+                            <input type="text" placeholder="Email Adress" id="email" class="item" autocomplete="on">
+                            <!-- <div class="error-txt email">Email não pode ficar em branco</div> -->
+                        </div>
+                    </div>
+
+                    <div class="textarea-field field">
+                        <textarea name="" id="message" cols="30" class="item" placeholder="Sua Mensagem"></textarea>
+                    </div>
+
+                    <button type="submit">Mandar Mensagem</button>
+                </form>
 
             </div>
-
         </div>
 
     </section>
