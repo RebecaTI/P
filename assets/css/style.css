@@ -414,7 +414,8 @@ form .input-box{
     width:48.5%;
 }
 
-.field .item{
+.field .item,
+#assunto{
     width:100%;
     padding:18px;
     background:transparent;
