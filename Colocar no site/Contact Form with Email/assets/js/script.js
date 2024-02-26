@@ -10,12 +10,14 @@ function sendEmail() {
 
     Email.send({
         SecureToken : "1fbfa3db-44e1-4750-9402-fd44ef648116",
-        Host : "smtp.elasticemail.com",
-        Username : "rebecaoliveirafullstack@gmail.com",
-        Password : "1717B35DBD223C2A0437A3906FC93AE14BFB",
+        
+        // Apagar essas informações abaixo
+        // Host : "smtp.elasticemail.com",
+        // Username : "rebecaoliveirafullstack@gmail.com",
+        // Password : "1717B35DBD223C2A0437A3906FC93AE14BFB",
         To : 'rebecaoliveirafullstack@gmail.com',
         From : "rebecaoliveirafullstack@gmail.com",
-        Subject : subject,
+        Subject : subject.value,
         Body : bodyMessage
     }).then(
       message => {

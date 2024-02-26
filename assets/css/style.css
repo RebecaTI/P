@@ -25,7 +25,6 @@
     padding: 0;
     max-width:100%;
     box-sizing: border-box;
-    font-size: 24px;
 }
 
 body{
@@ -389,10 +388,10 @@ img{
 
 
 /* ===== Alterações temporarias ===== */
-
 .nav-bar{
-    display: none;
+    display:none;
 }
+
 /* ===== Alterações temporarias ===== */
 
 .contact{
@@ -423,7 +422,57 @@ form .input-box{
     outline:none;
     border-radius:16px;
     font-size:16px;
+    color:#ededed;
+    margin:12px 0;
+}
 
+.field.error .item{
+    border-color:var(--vermelho);
+}
+
+.field .item::placeholder {
+    color:rgba(255, 255, 255, 3);
+}
+
+.field .error-txt{
+    font-size: 14.5px;
+    color:var(--vermelho);
+    text-align:left;
+    margin: -5px 0 10px;
+    display:none;
+}
+
+.field.error .error-txt{
+    display:block;
+}
+
+form .textarea-field .item{
+    resize:none;
+}
+#assunto{
+    width:100%;
+}
+
+#message{
+    height:8rem;
+}
+
+form button{
+    padding: 12px 32px;
+    background:var(--neon-azul);
+    border:none;
+    outline:none;
+    border-radius:6px;
+    color:var(--roxo-forte-2);
+    letter-spacing: 1px;
+    font-weight:600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+form button:hover {
+    box-shadow:none;
 }
 
 /* For small devices */
