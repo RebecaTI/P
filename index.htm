@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/botao-contato.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -22,19 +19,19 @@
 
             <div class="flex-header">
                  <!-- Adicionar um scroll suave  -->
-                <a href="#"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <a href="#homeRedireciona"><i class="fa fa-home" aria-hidden="true"></i></a>
 
                   <nav class="nav-header">
                     <ul>
-                        <li><a href="#">Sobre mim</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Habilidades</a></li>
-                        <li><a href="#">Certificações</a></li>
+                        <li><a href="#sobreRedireciona">Sobre mim</a></li>
+                        <li><a href="#projetosRedireciona">Projetos</a></li>
+                        <li><a href="#habilidadesRedireciona">Habilidades</a></li>
+                        <li><a href="#certificacoesRedireciona">Certificações</a></li>
                     </ul>
                   </nav>
 
                   <div class="btn-contato">
-                    <a href=""> Contato </a>
+                    <a href="#contatoRedireciona"> Contato </a>
                   </div>
 
             </div>
@@ -42,7 +39,7 @@
     </header>
 
     <main>
-        <section class="banner">      
+        <section class="banner" id="homeRedireciona">      
         <h1 >
             <div class="static-text">Olá, eu sou <br>Rebeca Oliveira</br></div>
             <span id="dynamic-neon-text" >
@@ -51,7 +48,7 @@
         </h1>
         </section>
 
-    <section class="box-sobre-mim hidden" >
+    <section class="box-sobre-mim hidden"  id="sobreRedireciona">
         <div class="sobre-mim hidden">
             <h2 class="title">Sobre mim</h2>
             <div class="linha-horizontal"></div>
@@ -81,14 +78,14 @@
         </div>
     </section>
 
-    <section class="box-projetos hidden" >
+    <section class="box-projetos hidden" id="projetosRedireciona">
         <div class="projetos">
             <h2 class="title">Projetos</h2>
             <div class="linha-horizontal"></div>
         </div>
     </section>
 
-    <section class="box-habilidades hidden" >
+    <section class="box-habilidades hidden" id="habilidadesRedireciona">
         <div class="habilidades">
             <h2 class="title">Habilidades</h2>
             <div class="linha-horizontal"></div>
@@ -112,7 +109,7 @@
         </div>
     </section>
 
-    <section class="box-certificicoes hidden">
+    <section class="box-certificicoes hidden" id="certificacoesRedireciona">
         <div class="certificacoes">
             <h2 class="title">Certificações</h2>
             <div class="linha-horizontal"></div>
@@ -231,7 +228,7 @@
         </div>
     </section>
 
-    <section class="box-contatos ">
+    <section class="box-contatos hidden" id="#contatoRedireciona">
         <div class="contato">
             <h2 class="title">Contato</h2>
             <div class="linha-horizontal"></div>
@@ -263,8 +260,7 @@
                     </div>
 
                     <div class="input-field field">
-                        <input type="text" placeholder="Assunto" id="assunto"  autocomplete="off">
-                        
+                        <input type="text" placeholder="Assunto" id="assunto"  autocomplete="off">             
                     </div>
 
                     <div class="textarea-field field">
@@ -284,11 +280,10 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./assets/js/send-email.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script src="./assets/js/script-menu.js"></script>
     <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/script-menu.js"></script>
     <script src="./assets/js/scroll-observer.js"></script>
-    <script src="./vanilla-tilt.min.js"></script>
-    <script src="./assets/js/efeito-3d.js"></script>
+    
 </body>
 </html>
 

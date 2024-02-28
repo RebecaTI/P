@@ -67,6 +67,11 @@ function checkEmail() {
     const errorTxtEmail = document.querySelector(".error-txt.email");
 
 
+    // Com !: Adiciona erro se o email não for válido.
+    // Sem !: Adiciona erro se o email for válido.
+    // Isso significa que sem o !, o seu código iria comportar-se de maneira contraintuitiva, marcando entradas válidas como erro.
+
+
     if(!email.value.match(emailRegex)){
         email.classList.add("error");
         email.parentElement.classList.add("error");
