@@ -36,9 +36,9 @@ body{
 /* Inicio header */
 .nav-bar {
     width: 100%;
-    padding: 60px 4%;
+    padding: 60px 2%;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     transition: .5s;
@@ -52,10 +52,11 @@ body{
 .flex-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
-.fa-home{
+.flex-header .fa-home{
+    font-size: 2rem;
     color:var(--azul-medio);
 }
 
@@ -64,6 +65,7 @@ body{
 .nav-bar.rolagem {
     background-color:var(--branco);
     padding: 1em 4%;
+
 }
 
 .nav-bar.rolagem li a,
@@ -80,7 +82,7 @@ body{
 .nav-header li {
     text-transform:uppercase;
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 2rem;
 }
 
 .nav-header li a{
@@ -377,10 +379,7 @@ img{
 }
 
 
-/* ===== Alterações temporarias ===== */
 
-
-/* ===== Alterações temporarias ===== */
 
 .contact{
     display:flex;
