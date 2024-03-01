@@ -107,6 +107,22 @@ body{
     transform:translateX(100%);
 }
 
+.hamburger{
+    border:none;
+    background:none;
+    border-top:3px solid #fff;
+    cursor:pointer;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content:"";
+    display:block;
+    width: 30px;
+    height: 3px;
+    background:#fff;
+    margin-top:5px;
+}
 /* fim header */
 
 /* inicio banner */
@@ -466,14 +482,46 @@ form button:hover {
 }
 
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen and (max-width: 750px){
+    .hamburger{
+        display:block;
+        z-index:3;
+    }
+
+    .nav-header {
+        
+        position:fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vw;
+        background:var(--roxo-forte-2);
+    }
+    
+    .nav-header li{
+        display:flex;
+        flex-direction:column;
+        
+        justify-content: space-around;
+        align-items:center;
+        gap:0;
+        pointer-events:none;
+        padding-block: 16px;
+        
+    }
+
+    .nav-header li a:before{       
+        width:100%;        
+    }
+
+    
     
 }
 
 /* For medium devices */
-@media screen and (min-width:768px){
+/* @media screen and (min-width:768px){
     .swiper-button-next,
     .swiper-button-prev{
         display:block;
     }
-}
+} */
