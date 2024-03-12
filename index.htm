@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="./assets/css/botao-contato.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -13,7 +12,7 @@
     <title>Rebeca Web Developer</title>
 </head>
 <body>
-    <header class="nav-bar ">
+    <header class="nav-bar">
 
         <div class="container-menu">
 
@@ -22,8 +21,10 @@
                 <a href="#homeRedireciona"><i class="fa fa-home" aria-hidden="true"></i></a>
                 
                 <nav class="nav-header">
-                      <button class="hamburger"></button>
-                    <ul>
+                      <button >Menu 
+                        <span id="hamburger"></span>
+                      </button>
+                    <ul id="menu" role="menu">
                         <li><a href="#sobreRedireciona">Sobre mim</a></li>
                         <li><a href="#projetosRedireciona">Projetos</a></li>
                         <li><a href="#habilidadesRedireciona">Habilidades</a></li>
@@ -45,7 +46,7 @@
         </h1>
         </section>
 
-    <section class="box-sobre-mim "  id="sobreRedireciona">
+    <section class="box-sobre-mim hidden"  id="sobreRedireciona">
         <div class="sobre-mim ">
             <h2 class="title">Sobre mim</h2>
             <div class="linha-horizontal"></div>
@@ -233,10 +234,10 @@
             <div class="socialMedia">
                 <ul class="sci">
                     <li >
-                        <a href="#" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/rebeca-oliveira-frontend-developer/" class="linkedin redeSocial hidden "><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://github.com/RebecaTI" class="github redeSocial hidden "><i class="fa fa-github" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
@@ -273,6 +274,8 @@
     </section>
 
     </main>
+    <script src="./menu.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./assets/js/send-email.js"></script>
