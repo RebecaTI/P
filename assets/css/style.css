@@ -88,6 +88,7 @@ body{
 }
 /* fim header */
 
+
 /* inicio banner */
 .banner {
     height: 90vh;
@@ -218,6 +219,31 @@ img{
     background:var(--roxo-forte-2);
 }
 
+/* Inicio projetos */
+
+.itens-projetos-flex{
+    display: flex;
+}
+
+.box-item-projeto{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    background: #352756;
+    margin: 2rem;
+}
+
+.img-projeto {
+    width: 100%;
+    height: 60%;
+}
+
+.linha-horizontal-projetos{
+    width: 100%;
+    height:2px;
+    background-color: #524966
+}
+/* Fim projetos */
 
 
 .flex-habilidades{
