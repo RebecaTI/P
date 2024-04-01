@@ -148,10 +148,10 @@ body{
 
 /* fim banner */
 
-/* .hidden {
+ .hidden {
     opacity: 0;
-    transform: translateX(-100%);
-    transition: all 2s;
+    transform: translateX(-50%);
+    transition: all 1s;
 }
 
 .show,
@@ -159,7 +159,7 @@ body{
     opacity: 1;
     transform: translateX(0);
     transition: all 2s;
-} */
+} 
 
 .box-sobre-mim,
 .box-habilidades,
@@ -221,16 +221,32 @@ img{
 
 /* Inicio projetos */
 
-.itens-projetos-flex{
+.itens-projetos-flex, 
+.box-item-projeto .img-projeto-1{
     display: flex;
+    justify-content: center;
 }
 
 .box-item-projeto{
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 400px;
+    
     border-radius: 10px;
     background: #352756;
     margin: 2rem;
+}
+
+.box-item-projeto .img-projeto-1{
+    align-items:center;
+    font-size: 1.3rem;
+}
+
+.box-item-projeto .img-projeto-1 p{
+    text-transform:uppercase;
+    background: var(--roxo-forte-2);
+    transform: rotate(-35deg);
+    padding:1rem;
+    border-radius: 50px;
 }
 
 .img-projeto {
@@ -242,6 +258,10 @@ img{
     width: 100%;
     height:2px;
     background-color: #524966
+}
+
+.txt-projeto{
+    height: 20%;
 }
 /* Fim projetos */
 
