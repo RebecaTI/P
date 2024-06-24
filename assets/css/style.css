@@ -92,7 +92,7 @@ body{
 /* inicio banner */
 .banner {
     height: 90vh;
-    background-image:url('../images/banner-background.jpg');
+    /* background-image:url('../images/banner-background.jpg'); */
     background-position: center;
     background-repeat:no-repeat;
     background-size:cover;
